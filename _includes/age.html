@@ -1,0 +1,5 @@
+{% assign birth = site.birthdate | date: "%Y%m%d" | plus: 0 %}
+{% assign today = "now" | date: "%Y%m%d" | plus: 0 %}
+{% assign age = today | minus: birth | divided_by: 10000 %}
+
+{{ age }}
