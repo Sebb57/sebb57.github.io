@@ -116,6 +116,24 @@ hr {
     border-color: #b1b1b1;
 }
 
+.waybar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 150px;
+    background-color: #6d8879; 
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+#date {
+    font-family: sans-serif;
+}
 
 #cusdis_thread {
     max-width: 700px;
