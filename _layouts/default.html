@@ -6,21 +6,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="preload" as="image" href="/images/gros_chat.jpg">
         <link rel="icon" href="/images/thanks.png">
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         
-        <div class="stars"></div>
-        <nav class="menu">
-            <a href="/">home</a>
-            &nbsp; <a href="/blog/index.html">blog</a>
-            &nbsp; <a href="/pages/guestbook.html">guestbook</a>
-            &nbsp; <a href="/pages/contact.html">contact</a>
-        </nav>
+        <div class="main_window">
+            <div class="window_header"></div>
+            <div class="window_body">
+                <nav class="menu">
+                    <img class="profile_pic" fetchpriority="high" src="/images/gros_chat.jpg">
+                    <a href="/">home</a>
+                    &nbsp; <a href="/blog/index.html">blog</a>
+                    &nbsp; <a href="/pages/guestbook.html">guestbook</a>
+                    &nbsp; <a href="/pages/contact.html">contact</a>
+                </nav>
 
-        <div>
-            {{ content }}
+                <div class="content">
+                    {{ content }}
+                </div>
+            </div>
         </div>
 
     </body>
