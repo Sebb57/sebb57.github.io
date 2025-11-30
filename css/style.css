@@ -118,6 +118,10 @@ a {
     cursor: url("/images/cursor_click.png"), pointer;
 }
 
+img {
+    cursor: url("/images/cursor_click.png"), pointer;
+}
+
 hr {
     width: 90%;
     max-width: 800px;
@@ -125,12 +129,35 @@ hr {
 }
 
 .webring {
-    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     position: relative;
+}
+
+.folder {
+    cursor: url("/images/cursor.png"), auto;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.folder p {
+    cursor: url("/images/cursor.png"), auto;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    padding: 2px 5px;
+    border-radius: 4px;
 }
 
 #cusdis_thread {
