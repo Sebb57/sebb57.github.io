@@ -114,11 +114,7 @@ body {
     margin-top: 20px;  /* distance from menu  */
 }
 
-a {
-    cursor: url("/images/cursor_click.png"), pointer;
-}
-
-img {
+a, img {
     cursor: url("/images/cursor_click.png"), pointer;
 }
 
@@ -158,6 +154,13 @@ hr {
     background: rgba(0,0,0,0.3);
     padding: 2px 5px;
     border-radius: 4px;
+}
+
+.post_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 #cusdis_thread {
