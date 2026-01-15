@@ -176,8 +176,8 @@ hr {
 /* } */
 
 #atabook {
-    width: 100%;
-    height: 400px;
+    width: 100% !important;
+    height: 400px !important;
     scrollbar-width: none !important;
 }
 
