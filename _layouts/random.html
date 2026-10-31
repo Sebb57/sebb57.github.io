@@ -1,15 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>{{ page.title }}</title>
+  <head>
+    <title>{{ page.title }}</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="icon" href="/images/thanks.png">
-    </head>
-    <body>
-        <a href="/">go back</a> 
-        {{ content }}
-    </body>
+    <link rel="icon" href="/images/thanks.png" />
+  </head>
+  <body>
+    <a href="/">go back</a>
+
+    <div
+      class="results"
+      style="
+        width: 200px;
+        background-color: #fff;
+        color: #000;
+        display: block;
+        padding: 10px;
+        border: 1px solid;
+        margin: 0 auto;
+        font-family: &quot;times&quot;;
+        font-size: &quot;15pt&quot;;
+      "
+    >
+      <p style="margin: 0">This page is protected by a</p>
+      <h1 class="title" style="margin: 0">BUTTERFLY</h1>
+      <img
+        class="image"
+        style="max-width: 160px; border: 1px solid"
+        alt="BUTTERFLY"
+        src="https://i.ibb.co/wwhYvRp/butterfly.jpg"
+      />
+      <p class="description">
+        The Large Blue butterfly is a species of carnivorous butterfly, and went
+        extinct in Britain in 1979. It has since been reintroduced with new
+        conservation methods.
+      </p>
+      <small>
+        <a href="https://hekate.neocities.org"
+          >Want your own? Visit hekate.neocities.org!</a
+        >
+      </small>
+    </div>
+
+    {{ content }}
+  </body>
 </html>
