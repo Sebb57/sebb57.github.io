@@ -6,11 +6,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preload" as="image" href="/images/gros_chat.jpg" />
-    <link rel="preload" as="image" href="/images/maxwell.webp" />
+    <link rel="prefetch" as="image" href="/images/maxwell.webp" />
 
-    <link rel="icon" href="/images/thanks.png" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/images/favicon.png" />
+    <style>{% include style.css %}</style>
 
     <script src="/js/switch_img.js" defer></script>
 
@@ -29,6 +28,8 @@
             alt="image of my cat"
             class="profile_pic"
             fetchpriority="high"
+            width="280"
+            height="200"
             src="/images/gros_chat.jpg"
             onclick="
               switch_img(this, '/images/maxwell.webp', 'gif of spinning cat')
@@ -40,13 +41,17 @@
           <a href="/pages/contact.html">contact</a>
         </nav>
         <hr />
-        <div class="content">{{ content }}</div>
+        <main class="content">{{ content }}</main>
       </div>
     </div>
 
     <div class="folder">
       <a href="/pages/random.html"
-        ><img alt="image of warframe pom2 folder" src="/images/folder.png"
+        ><img
+          alt="image of warframe pom2 folder"
+          width="112"
+          height="103"
+          src="/images/folder.png"
       /></a>
       <p>Random stuff...</p>
     </div>
@@ -56,17 +61,23 @@
         href="https://webring.dinhe.net/prev/https://doussangsebastien.github.io/"
         ><img
           alt="arrow pointing left used to go to previous webring page"
+          width="32"
+          height="32"
           src="/images/retro_webring/prev.png"
       /></a>
       <a href="https://webring.dinhe.net/"
         ><img
           alt="small earth logo used to go to webring page"
+          width="32"
+          height="32"
           src="/images/retro_webring/retro_webring.png"
       /></a>
       <a
         href="https://webring.dinhe.net/next/https://doussangsebastien.github.io/"
         ><img
           alt="arrow pointing left used to go to next webring page"
+          width="32"
+          height="32"
           src="/images/retro_webring/next.png"
       /></a>
     </div>

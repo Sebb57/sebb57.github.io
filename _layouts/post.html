@@ -6,22 +6,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="/images/thanks.png" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/images/favicon.png" />
+    <style>{% include style.css %}</style>
   </head>
   <body>
     <a href="/blog/index.html">go back</a>
     <div class="main_window">
       <div class="window_header"></div>
       <div class="window_body">
-        <div class="content">
+        <main class="content">
           <div class="post_header">
             <h1>{{ page.title }}</h1>
             <p>{{ page.date | date: "%d %B %Y" }}</p>
           </div>
 
           {{ content }}
-        </div>
+        </main>
       </div>
     </div>
   </body>

@@ -11,7 +11,7 @@ body {
     cursor: url("/images/cursor.png"), auto;
     /* overflow: hidden; */
     overflow: scroll;
-    background-image: url("/images/pom2.jpg");
+    background-image: url("/images/pom2.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
