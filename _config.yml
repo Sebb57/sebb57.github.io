@@ -1,8 +1,18 @@
-title: "Sébastien Doussang | dev"
-description: "Mon portfolio et blog"
-url: "https://doussangsebastien.github.io"
+title: "Sébastien Doussang"
+tagline: "Computer science student & developer"
+description: "Sébastien Doussang, French computer science student at Epitech. Projects in C, Python and Lua, and a blog about what I build."
+url: "https://sebb57.github.io"
 author: "Sébastien Doussang"
 lang: "en"
+
+social:
+  name: "Sébastien Doussang"
+  links:
+    - "https://www.linkedin.com/in/s%C3%A9bastien-doussang-213295337/"
+    - "https://github.com/Sebb57"
+
+exclude:
+  - tools/
 
 plugins:
   - jekyll-paginate

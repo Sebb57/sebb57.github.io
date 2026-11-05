@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "This website"
+description: "How and why I built my personal website and blog with Jekyll and GitHub Pages, and the Warframe 1999 interface that inspired its look."
 ---
 
 ### My first article about and on this website !
