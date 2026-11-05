@@ -14,7 +14,7 @@ sudo dnf install ruby ruby-devel @development-tools git #fedora
 ```
 
 ```bash
-git https://github.com/DoussangSebastien/doussangsebastien.github.io.git my-website && cd my-website
+git clone https://github.com/Sebb57/sebb57.github.io.git my-website && cd my-website
 
 gem install jekyll bundle
 bundle config set --local path 'vendor/bundle'
