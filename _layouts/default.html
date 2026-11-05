@@ -1,48 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>{{ page.title }}</title>
+  <head>
+    <title>{{ page.title }}</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="preload" as="image" href="/images/gros_chat.jpg">
-        <link rel="preload" as="image" href="/images/maxwell.webp">
+    <link rel="preload" as="image" href="/images/gros_chat.jpg" />
+    <link rel="preload" as="image" href="/images/maxwell.webp" />
 
-        <link rel="icon" href="/images/thanks.png">
-        <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/thanks.png" />
+    <link rel="stylesheet" href="/css/style.css" />
 
-        <script src="/js/switch_img.js" defer></script>
+    <script src="/js/switch_img.js" defer></script>
 
-        <meta name="google-site-verification" content="bK76QSrogeccFYpHCsLrrmrYvSQIIUDYSLFcoAmzeZ0" />
-    {% seo %} </head>
-    <body>
-        <div class="main_window">
-            <div class="window_header"></div>
-            <div class="window_body">
-                <nav class="menu">
-                    <img class="profile_pic" fetchpriority="high" src="/images/gros_chat.jpg" onclick="switch_img(this, '/images/maxwell.webp')">
-                    <a href="/">home</a>
-                    &nbsp; <a href="/blog/index.html">blog</a>
-                    &nbsp; <a href="/pages/guestbook.html">guestbook</a>
-                    &nbsp; <a href="/pages/contact.html">contact</a>
-                </nav>
-                <hr>
-                <div class="content">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
+    <meta
+      name="google-site-verification"
+      content="bK76QSrogeccFYpHCsLrrmrYvSQIIUDYSLFcoAmzeZ0"
+    />
+    {% seo %}
+  </head>
+  <body>
+    <div class="main_window">
+      <div class="window_header"></div>
+      <div class="window_body">
+        <nav class="menu">
+          <img
+            alt="image of my cat"
+            class="profile_pic"
+            fetchpriority="high"
+            src="/images/gros_chat.jpg"
+            onclick="
+              switch_img(this, '/images/maxwell.webp', 'gif of spinning cat')
+            "
+          />
+          <a href="/">home</a>
+          &nbsp; <a href="/blog/index.html">blog</a> &nbsp;
+          <a href="/pages/guestbook.html">guestbook</a> &nbsp;
+          <a href="/pages/contact.html">contact</a>
+        </nav>
+        <hr />
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
 
-        <div class="folder">
-            <a href="/pages/random.html"><img src="/images/folder.png"></a>
-            <p>Random stuff...</p>
-        </div>
+    <div class="folder">
+      <a href="/pages/random.html"
+        ><img alt="image of warframe pom2 folder" src="/images/folder.png"
+      /></a>
+      <p>Random stuff...</p>
+    </div>
 
-        <div class="webring">
-            <a href='https://webring.dinhe.net/prev/https://doussangsebastien.github.io/'><img src="/images/retro_webring/prev.png"></a>
-            <a href="https://webring.dinhe.net/"><img src="/images/retro_webring/retro_webring.png"></a>
-            <a href='https://webring.dinhe.net/next/https://doussangsebastien.github.io/'><img src="/images/retro_webring/next.png"></a>
-        </div>
-    </body>
+    <div class="webring">
+      <a
+        href="https://webring.dinhe.net/prev/https://doussangsebastien.github.io/"
+        ><img
+          alt="arrow pointing left used to go to previous webring page"
+          src="/images/retro_webring/prev.png"
+      /></a>
+      <a href="https://webring.dinhe.net/"
+        ><img
+          alt="small earth logo used to go to webring page"
+          src="/images/retro_webring/retro_webring.png"
+      /></a>
+      <a
+        href="https://webring.dinhe.net/next/https://doussangsebastien.github.io/"
+        ><img
+          alt="arrow pointing left used to go to next webring page"
+          src="/images/retro_webring/next.png"
+      /></a>
+    </div>
+  </body>
 </html>
