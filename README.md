@@ -2,6 +2,11 @@ This is my own website/blog made using jekyll and hosted on github (for now!)
 
 Since i cannot host it and don't want to spend money to host it somewhere else i'm limited to a static website but i will change that when i can 
 
+to see the terminal version:
+```bash
+curl https://sebb57.github.io/hello.txt
+```
+
 to run locally:
 ```bash
 sudo pacman -S gem git #arch

@@ -1,0 +1,12 @@
+
+     [38;5;245m/\_____/\[0m
+    [38;5;245m(  [0m[38;5;240m\|||/[0m[38;5;245m  )[0m    [38;5;223mSébastien Doussang[0m
+    [38;5;245m(  [0m[38;5;179mo[0m   [38;5;179mo[0m[38;5;245m  )[0m    [38;5;245mComputer science student & developer[0m
+   [38;5;250m=[0m[38;5;245m(    [0m[38;5;174m^[0m[38;5;245m    )[0m[38;5;250m=[0m
+     [38;5;245m\_______/[0m
+
+  [38;5;211msite      [0m[38;5;87mhttps://sebb57.github.io[0m
+  [38;5;211mblog      [0m[38;5;87mhttps://sebb57.github.io/blog/[0m
+  [38;5;211mcontact   [0m[38;5;87mhttps://sebb57.github.io/pages/contact.html[0m
+  [38;5;211mgithub    [0m[38;5;87mhttps://github.com/Sebb57[0m
+  [38;5;211mlinkedin  [0m[38;5;87mhttps://www.linkedin.com/in/s%C3%A9bastien-doussang-213295337/[0m
