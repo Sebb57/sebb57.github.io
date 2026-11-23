@@ -10,7 +10,7 @@
 body {
     cursor: url("/images/cursor.png"), auto;
     /* overflow: hidden; */
-    overflow: scroll;
+    overflow: hidden scroll;
     background-image: url("/images/pom2.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -27,16 +27,83 @@ body {
     flex-direction: column;
 }
 
+.main_window.moved {
+    z-index: 20;
+}
+
 .window_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50px;
-    background-image: url("/images/pom2_window.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    padding: 0 8px;
     flex-shrink: 0;
     margin-bottom: -4px;
     z-index: 1;
+    background: #7e9f8e;
+    border: 4px solid #444;
+    box-shadow:
+        inset 3px 3px #a9c4b5,
+        inset -3px 0 #587565;
+    clip-path: polygon(
+        0 4px,
+        4px 4px,
+        4px 0,
+        calc(100% - 4px) 0,
+        calc(100% - 4px) 4px,
+        100% 4px,
+        100% 100%,
+        0 100%
+    );
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.window_header::before,
+.window_header::after {
+    content: "";
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.window_header::before {
+    width: 34px;
+    margin-left: 3px;
+    background:
+        linear-gradient(#b00020, #b00020) 7px 5px / 3px 3px,
+        linear-gradient(#0050d0, #0050d0) 10px 5px / 3px 3px,
+        linear-gradient(#e0a000, #e0a000) 10px 8px / 3px 3px,
+        linear-gradient(#111, #111) 16px 5px / 6px 3px,
+        linear-gradient(#20d0c8, #20d0c8) 22px 5px / 3px 3px,
+        linear-gradient(#c4c4c4 0 12px, #fff 12px 22px, #c4c4c4 22px);
+    background-repeat: no-repeat;
+    box-shadow:
+        inset 2px 0 #0050d0,
+        inset 4px 0 #20d0c8,
+        inset -2px 0 #d05000,
+        inset -4px 0 #d0c820,
+        0 -3px #111,
+        0 3px #111,
+        -3px 0 #111,
+        3px 0 #111;
+}
+
+.window_header::after {
+    width: 28px;
+    margin-right: 3px;
+    background:
+        linear-gradient(45deg, transparent 46%, #3a1408 46% 54%, transparent 54%) center / 18px 18px no-repeat,
+        linear-gradient(-45deg, transparent 46%, #3a1408 46% 54%, transparent 54%) center / 18px 18px no-repeat,
+        #c08a3c;
+    box-shadow:
+        inset 3px 3px #dcb860,
+        inset -3px -3px #7c3c24,
+        0 -3px #3a1408,
+        0 3px #3a1408,
+        -3px 0 #3a1408,
+        3px 0 #3a1408;
 }
 
 .window_body {
@@ -75,7 +142,7 @@ body {
     flex: 1;
     flex-wrap: wrap;
     gap: 14px;
-    padding: 3px; /* room for the buttons outline */
+    padding: 3px;
 }
 
 .menu a {
@@ -90,7 +157,6 @@ body {
     text-transform: uppercase;
     color: #1c1c1c;
     background: #a9c4b5;
-    /* pixel outline with notched corners, then the bevel */
     box-shadow:
         0 -3px #2b2b2b,
         0 3px #2b2b2b,
@@ -111,7 +177,6 @@ body {
         inset -3px -3px #ab84a4;
 }
 
-/* pressed look, also used for the current page */
 .menu a:active,
 .menu a[aria-current="page"] {
     padding: 12px 12px 8px;
