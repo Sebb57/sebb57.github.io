@@ -8,7 +8,6 @@
 }
 
 body {
-    cursor: url("/images/cursor.png"), auto;
     /* overflow: hidden; */
     overflow: hidden scroll;
     background-image: url("/images/pom2.webp");
@@ -222,10 +221,6 @@ body {
     margin-top: 20px;  /* distance from menu  */
 }
 
-a, img {
-    cursor: url("/images/cursor_click.png"), pointer;
-}
-
 hr {
     width: 90%;
     max-width: 800px;
@@ -241,7 +236,6 @@ hr {
 }
 
 .folder {
-    cursor: url("/images/cursor.png"), auto;
     position: absolute;
     top: 200px;
     left: 150px;
@@ -249,12 +243,10 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
     z-index: 10;
 }
 
 .folder p {
-    cursor: url("/images/cursor.png"), auto;
     color: white;
     font-family: sans-serif;
     font-size: 0.9rem;

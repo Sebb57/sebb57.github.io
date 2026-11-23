@@ -1,0 +1,12 @@
+<link rel="preload" as="image" href="/images/cursor.png" />
+<link rel="preload" as="image" href="/images/cursor_click.png" />
+<style>
+/* Keep these images at 32x32 max: browsers drop bigger cursors near the window edges */
+html {
+    cursor: url("/images/cursor.png") 8 4, auto;
+}
+
+a, img {
+    cursor: url("/images/cursor_click.png") 16 0, pointer;
+}
+</style>
