@@ -70,21 +70,64 @@ body {
     align-items: flex-end;
 }
 
+.menu_links {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 3px; /* room for the buttons outline */
+}
+
 .menu a {
+    flex: 1 1 auto;
+    padding: 10px 12px;
+    text-align: center;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
-    color: black;
-    text-transform: uppercase;
     font-size: 0.9rem;
-    padding: 10px 20px;
-    background-image: url("/images/Button.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1c1c1c;
+    background: #a9c4b5;
+    /* pixel outline with notched corners, then the bevel */
+    box-shadow:
+        0 -3px #2b2b2b,
+        0 3px #2b2b2b,
+        -3px 0 #2b2b2b,
+        3px 0 #2b2b2b,
+        inset 3px 3px #d3e3da,
+        inset -3px -3px #7a9787;
 }
 
 .menu a:hover {
-    color: #dab6d4;
+    background: #dab6d4;
+    box-shadow:
+        0 -3px #2b2b2b,
+        0 3px #2b2b2b,
+        -3px 0 #2b2b2b,
+        3px 0 #2b2b2b,
+        inset 3px 3px #f1dfee,
+        inset -3px -3px #ab84a4;
+}
+
+/* pressed look, also used for the current page */
+.menu a:active,
+.menu a[aria-current="page"] {
+    padding: 12px 12px 8px;
+    background: #8cab9b;
+    box-shadow:
+        0 -3px #2b2b2b,
+        0 3px #2b2b2b,
+        -3px 0 #2b2b2b,
+        3px 0 #2b2b2b,
+        inset 3px 3px #678575,
+        inset -3px -3px #b9d0c4;
+}
+
+.menu a:focus-visible {
+    outline: 3px solid #7a2f6d;
+    outline-offset: 4px;
 }
 
 .profile_pic {
@@ -184,5 +227,33 @@ hr {
 @media (max-width: 1100px) {
     .folder {
         display: none; 
+    }
+}
+
+@media (max-width: 1010px) {
+    .menu_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_links {
+        width: 100%;
+    }
+
+    .profile_pic {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .window_body {
+        padding: 20px 10px;
     }
 }

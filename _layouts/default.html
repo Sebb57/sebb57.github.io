@@ -33,10 +33,12 @@
               switch_img(this, '/images/maxwell.webp', 'gif of spinning cat')
             "
           />
-          <a href="/">home</a>
-          &nbsp; <a href="/blog/">blog</a> &nbsp;
-          <a href="/pages/guestbook.html">guestbook</a> &nbsp;
-          <a href="/pages/contact.html">contact</a>
+          <div class="menu_links">
+            <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>home</a>
+            <a href="/blog/"{% if page.url contains "/blog/" %} aria-current="page"{% endif %}>blog</a>
+            <a href="/pages/guestbook.html"{% if page.url == "/pages/guestbook.html" %} aria-current="page"{% endif %}>guestbook</a>
+            <a href="/pages/contact.html"{% if page.url == "/pages/contact.html" %} aria-current="page"{% endif %}>contact</a>
+          </div>
         </nav>
         <hr />
         <main class="content">{{ content }}</main>
